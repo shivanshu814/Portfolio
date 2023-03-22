@@ -30,8 +30,9 @@ const Sidebar = () => {
 				download='name'>
 				<ImProfile className='w-4 h-4' /> Download Resume
 			</a>
+
 			{/* social media */}
-			<div className='flex justify-around w-9/12 mx-auto my-5 text-black-700 md:w-full'>
+			<div className='flex justify-around w-9/12 mx-auto my-5 text-black-700 md:w-full '>
 				<a href='https://www.linkedin.com/in/shivanshu-pathak-6611b5228/'>
 					<FaLinkedin className='w-6 h-6' cursor-pointer />
 				</a>
@@ -44,21 +45,27 @@ const Sidebar = () => {
 					<SiCodechef className='w-6 h-6' cursor-pointer />
 				</a>
 			</div>
-			<br></br>
+
 			{/* address */}
-			<div>
-				<GoLocation className='w-6 h-6' />
-				<div>
+			<div
+				className='py-4 my-5 bg-gray-200 '
+				style={{ marginLeft: '-0.7rem', marginRight: '-0.7rem' }}>
+				<div className='flex items-center justify-center'>
+					<GoLocation className='w-4 h-4 space-x-2' />
 					<span>Greater Noida, Uttar Pradesh 201310</span>
 				</div>
-				<p>shivanshu814pathak@gmail.com</p>
-				<p>+91 9893628988 / +91 8595438920</p>
+				<p className='my-2'>shivanshu814pathak@gmail.com</p>
+				<p className='my-2'>+91 9893628988 / +91 8595438920</p>
 			</div>
 
 			{/* contact */}
-			<button>Email me</button>
+			<button className='w-8/12 px-5 py-2 my-1 text-white rounded-full bg-gradient-to-r from-orange-500 to-green-500'>
+				Email me
+			</button>
 			{/* Theme */}
-			<button>UI Theme</button>
+			<button className='w-8/12 px-5 py-2 my-1 text-white rounded-full bg-gradient-to-r from-orange-500 to-green-500'>
+				UI Theme
+			</button>
 		</div>
 	);
 };

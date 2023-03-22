@@ -11,6 +11,9 @@ module.exports = {
 		'./src/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
+		fontFamily: {
+			delicious: ['Delicious Handrawn'],
+		},
 		extend: {},
 	},
 	plugins: [],
