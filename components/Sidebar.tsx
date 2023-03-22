@@ -14,7 +14,7 @@ const Sidebar = () => {
 				alt='user avatar'
 				className='w-32 h-32 mx-auto rounded-full'
 			/>
-			<h1 className='my-4 text-3xl font-medium tracking-wider'>
+			<h1 className='my-4 text-3xl tracking-wider font-delicious'>
 				<span>Shivanshu</span> Pathak
 			</h1>
 			<p className='px-2 py-1 my-3 bg-orange-400 rounded-full'>Web Developer</p>

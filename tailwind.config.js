@@ -14,7 +14,15 @@ module.exports = {
 		fontFamily: {
 			delicious: ['Delicious Handrawn'],
 		},
-		extend: {},
+		extend: {
+			colors: {
+				// ...
+				green: {
+					DEFAULT: '#00f260',
+				},
+				// ...
+			},
+		},
 	},
 	plugins: [],
 };
