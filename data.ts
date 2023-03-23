@@ -2,12 +2,7 @@
 import { icons } from 'react-icons/lib';
 import { RiComputerLine } from 'react-icons/ri';
 import { IconType } from 'react-icons';
-
-interface IService {
-	title: string;
-	about: string;
-	Icon: IconType;
-}
+import { IService } from './type';
 
 export const services: IService[] = [
 	{
