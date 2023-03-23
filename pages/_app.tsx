@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 			<div className='col-span-12 p-3 text-center bg-black lg:col-span-3 rounded-3xl'>
 				<Sidebar></Sidebar>
 			</div>
-			<div className='col-span-12 bg-white lg:col-span-9 rounded-3xl'>
+			<div className='flex flex-col col-span-12 bg-white lg:col-span-9 rounded-3xl'>
 				<Navbar></Navbar>
 				<Component {...pageProps} />
 			</div>
