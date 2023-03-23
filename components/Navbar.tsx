@@ -10,17 +10,17 @@ const Navbar = () => {
 			<span className='font-bold'>{activeItem}</span>
 			<div>
 				{activeItem !== 'About' && (
-					<Link href='/'>
+					<Link href='/' legacyBehavior>
 						<span>About</span>
 					</Link>
 				)}
 				{activeItem !== 'Projects' && (
-					<Link href='/projects'>
+					<Link href='/projects' legacyBehavior>
 						<span>Projects</span>
 					</Link>
 				)}
 				{activeItem !== 'Resume' && (
-					<Link href='/resume'>
+					<Link href='/resume' legacyBehavior>
 						<span>Resume</span>
 					</Link>
 				)}
