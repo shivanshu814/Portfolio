@@ -12,7 +12,9 @@ const NavItem: FunctionComponent<{
 }> = ({ activeItem, name, route, setActiveItem }) => {
 	return activeItem !== name ? (
 		<Link href={route} legacyBehavior>
-			<span onClick={() => setActiveItem(name)}>{name}</span>
+			<span onClick={() => setActiveItem(name)} className='hover:text-green'>
+				{name}
+			</span>
 		</Link>
 	) : null;
 };
@@ -28,9 +30,11 @@ const Navbar = () => {
 		if (pathname === '/resume') setActiveItem('Resume');
 	}, []);
 	return (
-		<div>
-			<span className='font-bold text-green'>{activeItem}</span>
-			<div className='flex space-x-3 text-red-600 cursor-pointer font-lg'>
+		<div className='flex justify-between px-5 py-3 my-3'>
+			<span className='text-xl font-bold border-b-4 border-green text-green md:text-2xl'>
+				{activeItem}
+			</span>
+			<div className='flex space-x-6 text-lg text-red-600 cursor-pointer'>
 				<NavItem
 					activeItem={activeItem}
 					setActiveItem={setActiveItem}
