@@ -1,5 +1,6 @@
 /** @format */
 
+import { GetServerSidePropsContext } from 'next';
 import { Inter } from 'next/font/google';
 import { services } from '../data';
 const inter = Inter({ subsets: ['latin'] });
@@ -12,3 +13,4 @@ export default function Home() {
 		</div>
 	);
 }
+export const getServerSideProps = (context: GetServerSidePropsContext) => {};
